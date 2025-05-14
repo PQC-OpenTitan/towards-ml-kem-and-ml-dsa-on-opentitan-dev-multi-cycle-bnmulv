@@ -1,0 +1,823 @@
+/* Copyright "Towards ML-KEM & ML-DSA on OpenTitan" Authors */
+/* Licensed under the Apache License, Version 2.0, see LICENSE for details. */
+/* SPDX-License-Identifier: Apache-2.0 */
+
+
+/*
+ * Test for kyber768_mlkem_enc
+*/
+
+.section .text.start
+
+/* Entry point. */
+.globl main
+main:
+  /* Init all-zero register. */
+  bn.xor  w31, w31, w31
+
+  /* MOD <= dmem[modulus] = KYBER_Q */
+  li      x5, 2
+  la      x6, modulus
+  bn.lid  x5, 0(x6)
+  bn.wsrw 0x0, w2
+
+  /* Load stack pointer */
+  la   x2, stack_end
+  la   x10, randombytes
+  la   x11, ct
+  la   x12, key_b
+  la   x13, pk
+  jal  x1, crypto_kem_enc
+
+  ecall
+
+.data
+.balign 32
+.global stack
+stack:
+  .zero 20000
+stack_end:
+ct:
+  .zero 1088
+key_b:
+  .zero 32
+
+.balign 32
+/* First input: randombytes */
+randombytes:
+  .word 0x87ccb835
+  .word 0x62dc233c
+  .word 0x1660d2b8
+  .word 0x752ffa9a
+  .word 0x586a91ab
+  .word 0x889174d9
+  .word 0x6a5ed235
+  .word 0xb2855043
+pk: 
+  .word 0xb631c31b
+  .word 0x041aa659
+  .word 0x5e0c3d88
+  .word 0x2777c0bb
+  .word 0x3bc3a454
+  .word 0x2ee5906a
+  .word 0x06ce7806
+  .word 0xa83b45a0
+  .word 0x5ab188a1
+  .word 0x6aae6b49
+  .word 0x637b1724
+  .word 0xb0fb126d
+  .word 0x95cdf288
+  .word 0x0220ac04
+  .word 0x31304731
+  .word 0x625c1aa3
+  .word 0xfb8862e4
+  .word 0x8b85db3e
+  .word 0xa50ebc21
+  .word 0xd12f219a
+  .word 0x9ea0dbc6
+  .word 0xd0120792
+  .word 0x7abea268
+  .word 0xa3f2f4bc
+  .word 0xee433453
+  .word 0x41dd8017
+  .word 0x60a98196
+  .word 0x5faf90cd
+  .word 0x158cabca
+  .word 0x5725ef52
+  .word 0x2b7a152f
+  .word 0x184a93bb
+  .word 0x767ac5a5
+  .word 0x5da4541b
+  .word 0xbcc64a77
+  .word 0xa1833559
+  .word 0xcd4dfcbc
+  .word 0xab87ca0c
+  .word 0x3d46ff9c
+  .word 0xbb0ee8c5
+  .word 0x8cd101b5
+  .word 0x24e3398b
+  .word 0xa07cd0db
+  .word 0xba75bf6c
+  .word 0xbc7a2933
+  .word 0xd5bdaac7
+  .word 0x1b4008b3
+  .word 0x33f587a3
+  .word 0x517b92f3
+  .word 0xf58013e9
+  .word 0x9e119ba5
+  .word 0xab354835
+  .word 0x2cb62d18
+  .word 0x5fd8d676
+  .word 0x744132a6
+  .word 0x2a01523a
+  .word 0x221228ac
+  .word 0xe23700bc
+  .word 0x77b493c4
+  .word 0x59cb997a
+  .word 0x55a1ab29
+  .word 0x9bbc06a0
+  .word 0x5f361c46
+  .word 0xac3f58a3
+  .word 0x03b41454
+  .word 0x073591af
+  .word 0x0da1339b
+  .word 0xb49c81f8
+  .word 0x2567f062
+  .word 0xc4b3923f
+  .word 0xc1b17f5a
+  .word 0x91408d47
+  .word 0xba1090e3
+  .word 0x19100744
+  .word 0x15aa0d01
+  .word 0x143df4c0
+  .word 0xa38f1a64
+  .word 0xa2fa4ca9
+  .word 0x81ae77a8
+  .word 0x22f8bb13
+  .word 0x2332e11e
+  .word 0xfb946437
+  .word 0x59828b12
+  .word 0x5a10d552
+  .word 0xd67d15e4
+  .word 0xd5710fd7
+  .word 0x4df348bd
+  .word 0x62769946
+  .word 0x126cce9b
+  .word 0xca881c93
+  .word 0x5e968208
+  .word 0x278f5327
+  .word 0x6b79192b
+  .word 0x07261225
+  .word 0x381b135b
+  .word 0x15904f56
+  .word 0x9ccd8395
+  .word 0x8c093c4c
+  .word 0x67a2068f
+  .word 0x73b862b2
+  .word 0x29969e1b
+  .word 0x5211c476
+  .word 0xb5306ca7
+  .word 0x5642d002
+  .word 0x437b3535
+  .word 0xce3e3acd
+  .word 0x1099bcf5
+  .word 0x9eca89bb
+  .word 0xe875ba91
+  .word 0xc2531d12
+  .word 0x22529b32
+  .word 0x0d5612df
+  .word 0x52242724
+  .word 0x6e0bf63f
+  .word 0x990d31ad
+  .word 0x3b484d95
+  .word 0x723a3891
+  .word 0x1b7f936a
+  .word 0xb274b460
+  .word 0x19b8a52e
+  .word 0x39035854
+  .word 0x479f1cd8
+  .word 0x3f4ab4ba
+  .word 0xa733c8e0
+  .word 0xb3f5a1db
+  .word 0x452a5a3a
+  .word 0x5c641298
+  .word 0x31c23765
+  .word 0x1bd76371
+  .word 0xa5a4d77b
+  .word 0xa1289a45
+  .word 0xaa5986c2
+  .word 0x9acaa1d9
+  .word 0x0663a399
+  .word 0x5533452d
+  .word 0xa6458410
+  .word 0x778e4373
+  .word 0x75734e62
+  .word 0xd0841a7c
+  .word 0xb20fcf31
+  .word 0xaa87114b
+  .word 0x8e73e6fb
+  .word 0xb4f5ba9a
+  .word 0x1f4b002b
+  .word 0x2664d9a0
+  .word 0x4232c5d3
+  .word 0x1e87dd35
+  .word 0x4d36897a
+  .word 0x67bb5e33
+  .word 0x8109ad18
+  .word 0x148b2054
+  .word 0xeb432b3b
+  .word 0x81d85f9e
+  .word 0xd425526c
+  .word 0x0908b494
+  .word 0x039945b2
+  .word 0x1d6a48c6
+  .word 0x1434acb9
+  .word 0x67185e94
+  .word 0x2f9c86b5
+  .word 0xdc9ecf88
+  .word 0x8166210a
+  .word 0xd3784580
+  .word 0xa3e52349
+  .word 0xa9bbba53
+  .word 0x7790db23
+  .word 0xe784b325
+  .word 0x7298664e
+  .word 0xe007e092
+  .word 0xf266675c
+  .word 0xb739f867
+  .word 0xe2557c61
+  .word 0x12a20f8b
+  .word 0x37d0a21d
+  .word 0xf90a83d6
+  .word 0xfbe169d8
+  .word 0x64cbb052
+  .word 0xa721e25f
+  .word 0xe4462a9b
+  .word 0x46d38019
+  .word 0x8dc5cc71
+  .word 0x4b055687
+  .word 0x137bca2c
+  .word 0xf3055a71
+  .word 0xcc555392
+  .word 0x8dab38a8
+  .word 0x5f252524
+  .word 0x27571361
+  .word 0xbcd67a16
+  .word 0xbf2e63b0
+  .word 0x954b3886
+  .word 0x8810d20a
+  .word 0xa4b492c2
+  .word 0x9ce5c0fc
+  .word 0x7ff7d342
+  .word 0x9fcd85ac
+  .word 0xb349b05c
+  .word 0xa90595a2
+  .word 0xacc6c484
+  .word 0x0a3dca98
+  .word 0xb1d2308f
+  .word 0xb91598bd
+  .word 0x1b05274b
+  .word 0x45c3ff40
+  .word 0x9e8b665a
+  .word 0x61281414
+  .word 0x1b0c281b
+  .word 0xf6552b8f
+  .word 0x0ce104eb
+  .word 0x0e34f168
+  .word 0x152158f1
+  .word 0xb7e20ef1
+  .word 0xb0ebb785
+  .word 0x610c3aec
+  .word 0x81f40c67
+  .word 0xcd94b507
+  .word 0x0d8e236e
+  .word 0x471b9668
+  .word 0x87873b98
+  .word 0x9d517197
+  .word 0x68217c2b
+  .word 0xb494d41c
+  .word 0x003df020
+  .word 0xeb6eb04b
+  .word 0x80c0f954
+  .word 0xf6aff2c2
+  .word 0xd5749075
+  .word 0x1cb1a3b3
+  .word 0x6daff173
+  .word 0xecee74c8
+  .word 0x09544d25
+  .word 0x0fa9eafc
+  .word 0xb6906df6
+  .word 0x0f540a93
+  .word 0x18bed9d1
+  .word 0x861daf44
+  .word 0x616af91f
+  .word 0x6c4a411a
+  .word 0xb28fa761
+  .word 0x38748ea7
+  .word 0xbc5eb03a
+  .word 0x815a8573
+  .word 0x4272628a
+  .word 0xe2a323d5
+  .word 0x28b45aa3
+  .word 0x64254a5b
+  .word 0xaa7267f7
+  .word 0xf8c9cdf8
+  .word 0xb4f1657c
+  .word 0x059981b5
+  .word 0xa59e4ffb
+  .word 0xbdfb6691
+  .word 0xeec501b2
+  .word 0x41f70dfc
+  .word 0xb511a28c
+  .word 0x11a579b0
+  .word 0x2944b9b8
+  .word 0x7f537b84
+  .word 0x572dd8be
+  .word 0xe8632d63
+  .word 0x2d21d815
+  .word 0x430d288a
+  .word 0xa6048632
+  .word 0x88c1d2c4
+  .word 0x61b07a7e
+  .word 0x16a020f1
+  .word 0x73f4b28d
+  .word 0x93b16953
+  .word 0xeb0a0f78
+  .word 0x65f21f38
+  .word 0xe2463b3f
+  .word 0x7ae7af06
+  .word 0x774c817e
+  .word 0x66b1a116
+  .word 0xa0d27d72
+  .word 0xaed8a7b9
+  .word 0xda25e4ac
+  .word 0x817f9763
+  .word 0x9f7c4503
+  .word 0x76268a43
+  .word 0x9c3a0ec1
+  .word 0x58850b63
+  .word 0xe58e2873
+  .word 0xc305ca60
+  .word 0x9e32c77c
+  .word 0xfa2c509e
+  .word 0x42b918c9
+  .word 0x5d444405
+  .word 0xf593fa4c
+  .word 0xc722e96e
+  .word 0x7b9360d6
+  .word 0x07c33759
+  .word 0x8f96624d
+  .word 0x11126d00
+  .word 0x689602c6
+  .word 0xdee55359
+
+/* Modulus: KYBER_Q = 3329 */
+.globl modulus
+modulus:
+  .word 0x00000d01
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+
+.globl modulus_bn
+modulus_bn:
+  .word 0x0d010d01
+  .word 0x0d010d01
+  .word 0x0d010d01
+  .word 0x0d010d01
+  .word 0x0d010d01
+  .word 0x0d010d01
+  .word 0x0d010d01
+  .word 0x0d010d01
+
+.globl modulus_over_2
+modulus_over_2:
+  .word 0x06810681
+  .word 0x06810681
+  .word 0x06810681
+  .word 0x06810681
+  .word 0x06810681
+  .word 0x06810681
+  .word 0x06810681
+  .word 0x06810681
+
+.globl const_0x0fff
+const_0x0fff:
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+  .word 0x0fff0fff
+
+.globl const_1290167
+const_1290167:
+  .word 0x0013afb7
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+  .word 0x00000000
+
+.globl const_8
+const_8:
+  .word 0x00080008
+  .word 0x00080008
+  .word 0x00080008
+  .word 0x00080008
+  .word 0x00080008
+  .word 0x00080008
+  .word 0x00080008
+  .word 0x00080008
+  
+.globl twiddles_ntt
+twiddles_ntt:
+    /* Layer 1--4 */ 
+    .half 0x06c1
+    .half 0x0a14
+    .half 0x0cd9
+    .half 0x0a52
+    .half 0x0276
+    .half 0x0769
+    .half 0x0350
+    .half 0x0426
+    .half 0x077f
+    .half 0x00c1
+    .half 0x031d
+    .half 0x0ae2
+    .half 0x0cbc
+    .half 0x0239
+    .half 0x06d2
+    /* Padding */
+    .half 0x0000
+    /* Layer 5 */
+    .word 0x01280128
+    .word 0x098f098f
+    .word 0x053b053b
+    .word 0x05c405c4
+    .word 0x0be60be6
+    .word 0x00380038
+    .word 0x08c008c0
+    .word 0x05350535
+    .word 0x05920592
+    .word 0x082e082e
+    .word 0x02170217
+    .word 0x0b420b42
+    .word 0x09590959
+    .word 0x0b3f0b3f
+    .word 0x07b607b6
+    .word 0x03350335
+    /* Layer 6 */
+    .word 0x01210121
+    .word 0x0cb50cb5
+    .word 0x04ad04ad
+    .word 0x08e508e5
+    .word 0x028a028a
+    .word 0x09d109d1
+    .word 0x0b310b31
+    .word 0x05280528
+    .word 0x014b014b
+    .word 0x06dc06dc
+    .word 0x09000900
+    .word 0x08070807
+    .word 0x07b907b9
+    .word 0x02780278
+    .word 0x00210021
+    .word 0x077b077b
+    .word 0x090f090f
+    .word 0x03270327
+    .word 0x059e059e
+    .word 0x05fe05fe
+    .word 0x0a570a57
+    .word 0x05c905c9
+    .word 0x09aa09aa
+    .word 0x04cb04cb
+    .word 0x059b059b
+    .word 0x01c401c4
+    .word 0x0b340b34
+    .word 0x09620962
+    .word 0x0a390a39
+    .word 0x02880288
+    .word 0x0c260c26
+    .word 0x038e038e
+    /* Layer 7 */
+    .word 0x00110011
+    .word 0x06650665
+    .word 0x05810581
+    .word 0x02f402f4
+    .word 0x06a706a7
+    .word 0x07370737
+    .word 0x03ab03ab
+    .word 0x02dd02dd
+    .word 0x0ac90ac9
+    .word 0x02d302d3
+    .word 0x0a660a66
+    .word 0x086c086c
+    .word 0x06730673
+    .word 0x03b803b8
+    .word 0x09040904
+    .word 0x09210921
+    .word 0x02470247
+    .word 0x08f008f0
+    .word 0x0cd10cd1
+    .word 0x0bc70bc7
+    .word 0x0ae50ae5
+    .word 0x05b505b5
+    .word 0x09850985
+    .word 0x010c010c
+    .word 0x0a590a59
+    .word 0x044c044c
+    .word 0x00e900e9
+    .word 0x0bea0bea
+    .word 0x06fd06fd
+    .word 0x0a7f0a7f
+    .word 0x09540954
+    .word 0x02810281
+    .word 0x06300630
+    .word 0x01770177
+    .word 0x04270427
+    .word 0x08330833
+    .word 0x0af40af4
+    .word 0x04770477
+    .word 0x06ba06ba
+    .word 0x083e083e
+    .word 0x08fa08fa
+    .word 0x09f509f5
+    .word 0x013f013f
+    .word 0x02310231
+    .word 0x04440444
+    .word 0x08660866
+    .word 0x04bc04bc
+    .word 0x0b770b77
+    .word 0x07f507f5
+    .word 0x082a082a
+    .word 0x0ad50ad5
+    .word 0x09a209a2
+    .word 0x01930193
+    .word 0x0ad70ad7
+    .word 0x07520752
+    .word 0x03750375
+    .word 0x0c940c94
+    .word 0x066d066d
+    .word 0x02f502f5
+    .word 0x0a220a22
+    .word 0x04020402
+    .word 0x03760376
+    .word 0x04050405
+    .word 0x086a086a
+
+.globl twiddles_intt
+twiddles_intt:
+    /* Layer 7 */
+    .word 0xf796f796
+    .word 0xfbfbfbfb
+    .word 0xfc8afc8a
+    .word 0xfbfefbfe
+    .word 0xf5def5de
+    .word 0xfd0bfd0b
+    .word 0xf993f993
+    .word 0xf36cf36c
+    .word 0xfc8bfc8b
+    .word 0xf8aef8ae
+    .word 0xf529f529
+    .word 0xfe6dfe6d
+    .word 0xf65ef65e
+    .word 0xf52bf52b
+    .word 0xf7d6f7d6
+    .word 0xf80bf80b
+    .word 0xf489f489
+    .word 0xfb44fb44
+    .word 0xf79af79a
+    .word 0xfbbcfbbc
+    .word 0xfdcffdcf
+    .word 0xfec1fec1
+    .word 0xf60bf60b
+    .word 0xf706f706
+    .word 0xf7c2f7c2
+    .word 0xf946f946
+    .word 0xfb89fb89
+    .word 0xf50cf50c
+    .word 0xf7cdf7cd
+    .word 0xfbd9fbd9
+    .word 0xfe89fe89
+    .word 0xf9d0f9d0
+    .word 0xfd7ffd7f
+    .word 0xf6acf6ac
+    .word 0xf581f581
+    .word 0xf903f903
+    .word 0xf416f416
+    .word 0xff17ff17
+    .word 0xfbb4fbb4
+    .word 0xf5a7f5a7
+    .word 0xfef4fef4
+    .word 0xf67bf67b
+    .word 0xfa4bfa4b
+    .word 0xf51bf51b
+    .word 0xf439f439
+    .word 0xf32ff32f
+    .word 0xf710f710
+    .word 0xfdb9fdb9
+    .word 0xf6dff6df
+    .word 0xf6fcf6fc
+    .word 0xfc48fc48
+    .word 0xf98df98d
+    .word 0xf794f794
+    .word 0xf59af59a
+    .word 0xfd2dfd2d
+    .word 0xf537f537
+    .word 0xfd23fd23
+    .word 0xfc55fc55
+    .word 0xf8c9f8c9
+    .word 0xf959f959
+    .word 0xfd0cfd0c
+    .word 0xfa7ffa7f
+    .word 0xf99bf99b
+    .word 0xffefffef
+    /* Layer 6 */
+    .word 0xfc72fc72
+    .word 0xf3daf3da
+    .word 0xfd78fd78
+    .word 0xf5c7f5c7
+    .word 0xf69ef69e
+    .word 0xf4ccf4cc
+    .word 0xfe3cfe3c
+    .word 0xfa65fa65
+    .word 0xfb35fb35
+    .word 0xf656f656
+    .word 0xfa37fa37
+    .word 0xf5a9f5a9
+    .word 0xfa02fa02
+    .word 0xfa62fa62
+    .word 0xfcd9fcd9
+    .word 0xf6f1f6f1
+    .word 0xf885f885
+    .word 0xffdfffdf
+    .word 0xfd88fd88
+    .word 0xf847f847
+    .word 0xf7f9f7f9
+    .word 0xf700f700
+    .word 0xf924f924
+    .word 0xfeb5feb5
+    .word 0xfad8fad8
+    .word 0xf4cff4cf
+    .word 0xf62ff62f
+    .word 0xfd76fd76
+    .word 0xf71bf71b
+    .word 0xfb53fb53
+    .word 0xf34bf34b
+    .word 0xfedffedf
+    /* Layer 5 */
+    .word 0xfccbfccb
+    .word 0xf84af84a
+    .word 0xf4c1f4c1
+    .word 0xf6a7f6a7
+    .word 0xf4bef4be
+    .word 0xfde9fde9
+    .word 0xf7d2f7d2
+    .word 0xfa6efa6e
+    .word 0xfacbfacb
+    .word 0xf740f740
+    .word 0xffc8ffc8
+    .word 0xf41af41a
+    .word 0xfa3cfa3c
+    .word 0xfac5fac5
+    .word 0xf671f671
+    .word 0xfed8fed8
+    /* Layer 4--2 */ 
+    .half 0xf92e
+    .half 0xfdc7
+    .half 0xf344
+    .half 0xf51e
+    .half 0xfce3
+    .half 0xff3f
+    .half 0xf881
+    .half 0xfbda
+    .half 0xfcb0
+    .half 0xf897
+    .half 0xfd8a
+    .half 0xf5ae
+    .half 0xf327
+    .half 0xf5ec
+    /* Layer 1 */
+    .half 0x068d
+    /* 1/128 mod KYBER_Q */
+    .half 0x0ce7
+
+.globl twiddles_basemul
+twiddles_basemul:
+    .word 0x00110001
+    .word 0xffef0001
+    .word 0x0ac90001
+    .word 0xf5370001
+    .word 0x02470001
+    .word 0xfdb90001
+    .word 0x0a590001
+    .word 0xf5a70001
+    .word 0x06650001
+    .word 0xf99b0001
+    .word 0x02d30001
+    .word 0xfd2d0001
+    .word 0x08f00001
+    .word 0xf7100001
+    .word 0x044c0001
+    .word 0xfbb40001
+    .word 0x05810001
+    .word 0xfa7f0001
+    .word 0x0a660001
+    .word 0xf59a0001
+    .word 0x0cd10001
+    .word 0xf32f0001
+    .word 0x00e90001
+    .word 0xff170001
+    .word 0x02f40001
+    .word 0xfd0c0001
+    .word 0x086c0001
+    .word 0xf7940001
+    .word 0x0bc70001
+    .word 0xf4390001
+    .word 0x0bea0001
+    .word 0xf4160001
+    .word 0x06a70001
+    .word 0xf9590001
+    .word 0x06730001
+    .word 0xf98d0001
+    .word 0x0ae50001
+    .word 0xf51b0001
+    .word 0x06fd0001
+    .word 0xf9030001
+    .word 0x07370001
+    .word 0xf8c90001
+    .word 0x03b80001
+    .word 0xfc480001
+    .word 0x05b50001
+    .word 0xfa4b0001
+    .word 0x0a7f0001
+    .word 0xf5810001
+    .word 0x03ab0001
+    .word 0xfc550001
+    .word 0x09040001
+    .word 0xf6fc0001
+    .word 0x09850001
+    .word 0xf67b0001
+    .word 0x09540001
+    .word 0xf6ac0001
+    .word 0x02dd0001
+    .word 0xfd230001
+    .word 0x09210001
+    .word 0xf6df0001
+    .word 0x010c0001
+    .word 0xfef40001
+    .word 0x02810001
+    .word 0xfd7f0001
+    .word 0x06300001
+    .word 0xf9d00001
+    .word 0x08fa0001
+    .word 0xf7060001
+    .word 0x07f50001
+    .word 0xf80b0001
+    .word 0x0c940001
+    .word 0xf36c0001
+    .word 0x01770001
+    .word 0xfe890001
+    .word 0x09f50001
+    .word 0xf60b0001
+    .word 0x082a0001
+    .word 0xf7d60001
+    .word 0x066d0001
+    .word 0xf9930001
+    .word 0x04270001
+    .word 0xfbd90001
+    .word 0x013f0001
+    .word 0xfec10001
+    .word 0x0ad50001
+    .word 0xf52b0001
+    .word 0x02f50001
+    .word 0xfd0b0001
+    .word 0x08330001
+    .word 0xf7cd0001
+    .word 0x02310001
+    .word 0xfdcf0001
+    .word 0x09a20001
+    .word 0xf65e0001
+    .word 0x0a220001
+    .word 0xf5de0001
+    .word 0x0af40001
+    .word 0xf50c0001
+    .word 0x04440001
+    .word 0xfbbc0001
+    .word 0x01930001
+    .word 0xfe6d0001
+    .word 0x04020001
+    .word 0xfbfe0001
+    .word 0x04770001
+    .word 0xfb890001
+    .word 0x08660001
+    .word 0xf79a0001
+    .word 0x0ad70001
+    .word 0xf5290001
+    .word 0x03760001
+    .word 0xfc8a0001
+    .word 0x06ba0001
+    .word 0xf9460001
+    .word 0x04bc0001
+    .word 0xfb440001
+    .word 0x07520001
+    .word 0xf8ae0001
+    .word 0x04050001
+    .word 0xfbfb0001
+    .word 0x083e0001
+    .word 0xf7c20001
+    .word 0x0b770001
+    .word 0xf4890001
+    .word 0x03750001
+    .word 0xfc8b0001
+    .word 0x086a0001
+    .word 0xf7960001
