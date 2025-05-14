@@ -1,0 +1,15 @@
+[submodule "sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithium-py-bench"]
+	path = sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithium-py-bench
+	url = https://github.com/dop-amin/dilithium-py-bench.git
+[submodule "sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithiumpy"]
+	path = sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithiumpy
+	url = https://github.com/dop-amin/dilithium-py-bench.git
+[submodule "sw/otbn/crypto/tests/kyberpy_bench_otbn/kyberpy"]
+	path = sw/otbn/crypto/tests/kyberpy_bench_otbn/kyberpy
+	url = https://github.com/phamhnh/kyberpy.git
+[submodule "sw/device/tests/pq-crystals/dilithium_opentitan"]
+	path = sw/device/tests/pq-crystals/dilithium_opentitan
+	url = https://github.com/phamhnh/dilithium_opentitan.git
+[submodule "sw/device/tests/pq-crystals/kyber_opentitan"]
+	path = sw/device/tests/pq-crystals/kyber_opentitan
+	url = https://github.com/phamhnh/kyber_opentitan.git

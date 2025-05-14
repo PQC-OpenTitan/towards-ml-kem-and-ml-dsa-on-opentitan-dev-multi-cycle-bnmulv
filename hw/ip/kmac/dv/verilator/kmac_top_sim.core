@@ -1,0 +1,68 @@
+CAPI=2:
+# Copyright lowRISC contributors (OpenTitan project).
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+# Modified by Authors of "Towards ML-KEM & ML-DSA on OpenTitan" (https://eprint.iacr.org/2024/1192).
+# Copyright "Towards ML-KEM & ML-DSA on OpenTitan" Authors.
+
+name: "lowrisc:ip:kmac_top_sim:0.1"
+description: "Standalone KMAC simulation"
+
+filesets:
+  files_kmac:
+    depend:
+      - lowrisc:ip:kmac
+      - lowrisc:ip:keymgr_pkg
+      - lowrisc:ip:lc_ctrl_pkg
+  files_verilator:
+    files:
+      - fips202.h: { file_type: cSource, is_include_file: true }
+      - fips202.c: { file_type: cSource }
+      - kmac_top_sim.cc: { file_type: cppSource }
+      - kmac_top_sim.sv: { file_type: systemVerilogSource }
+  files_verilator_waiver:
+    files:
+      - kmac_top_sim.vlt
+    file_type: vlt
+
+targets:
+  default: &default_target
+    filesets:
+      - files_verilator_waiver
+      - files_kmac
+      - files_verilator
+    toplevel: kmac_top_sim
+
+  lint:
+    <<: *default_target
+    default_tool: verilator
+    tools:
+      verilator:
+        mode: lint-only
+        verilator_options:
+          - "-Wall"
+          # RAM primitives wider than 64bit (required for ECC) fail to build in
+          # Verilator without increasing the unroll count (see Verilator#1266)
+          - "--unroll-count 72"
+
+  sim:
+    <<: *default_target
+    default_tool: verilator
+    tools:
+      verilator:
+        mode: cc
+        verilator_options:
+          # Disabling tracing reduces compile times but doesn't have a
+          # huge influence on runtime performance.
+          - '--trace'
+          - '--trace-fst' # this requires -DVM_TRACE_FMT_FST in CFLAGS below!
+          - '--trace-structs'
+          - '--trace-params'
+          - '--trace-max-array 1024'
+          - '-CFLAGS "-std=c++11 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=otbn_top_sim -fpermissive"'
+          - '-LDFLAGS "-pthread -lutil -lelf"'
+          - "-Wall"
+          - "-Wno-UNOPTFLAT"
+          # RAM primitives wider than 64bit (required for ECC) fail to build in
+          # Verilator without increasing the unroll count (see Verilator#1266)
+          - "--unroll-count 72"
