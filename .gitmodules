@@ -1,0 +1,6 @@
+[submodule "sw/otbn/crypto/tests/kyberpy_bench_otbn/kyberpy"]
+	path = sw/otbn/crypto/tests/kyberpy_bench_otbn/kyberpy
+	url = git@github.com:phamhnh/kyberpy.git
+[submodule "sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithium-py-bench"]
+	path = sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithium-py-bench
+	url = https://github.com/dop-amin/dilithium-py-bench.git
