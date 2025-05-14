@@ -1,0 +1,2008 @@
+// Copyright "Towards ML-KEM & ML-DSA on OpenTitan" Authors
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+
+	Setting KMAC config: mode = 0, strength = 2, len = 136
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	KMAC App Iface Ready
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0x3334c59476c717b802cedb6c919345bcbaceb75f1f7d6396e425c5d39d34f3a9
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xe425c5d39d34f3a9, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: e425c5d39d34f3a9
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xbaceb75f1f7d6396, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: baceb75f1f7d6396
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x2cedb6c919345bc, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 8, available = 128 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 02cedb6c919345bc
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x3334c59476c717b8, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 16, available = 120 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 3334c59476c717b8
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0xb62477a611d0a7d86b39131461df198238be9bfe4d1f7956e3dd3da28ea139eb
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 24, available = 112 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 32, available = 104 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xe3dd3da28ea139eb, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 32, available = 104 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: e3dd3da28ea139eb
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x38be9bfe4d1f7956, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 32, available = 104 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 38be9bfe4d1f7956
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x6b39131461df1982, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 40, available = 96 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 6b39131461df1982
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xb62477a611d0a7d8, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 48, available = 88 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: b62477a611d0a7d8
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0x810c943f73434af863be43f1def5a57177f6560dd383a4b1441b8568e4433b3a
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 56, available = 80 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 64, available = 72 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x441b8568e4433b3a, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 64, available = 72 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 441b8568e4433b3a
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x77f6560dd383a4b1, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 64, available = 72 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 77f6560dd383a4b1
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x63be43f1def5a571, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 72, available = 64 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 63be43f1def5a571
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x810c943f73434af8, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 80, available = 56 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 810c943f73434af8
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0xfce18c4f42e5dba7d7514c876e3a0473a1a56e68ce833a2ada91177ff2db034f
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 88, available = 48 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 96, available = 40 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xda91177ff2db034f, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 96, available = 40 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: da91177ff2db034f
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xa1a56e68ce833a2a, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 96, available = 40 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: a1a56e68ce833a2a
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xd7514c876e3a0473, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 104, available = 32 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: d7514c876e3a0473
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xfce18c4f42e5dba7, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 112, available = 24 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: fce18c4f42e5dba7
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0x505984e123d5d74137c4342128479e780eec339518917b4ce8c38f0d71ab3d3
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 120, available = 16 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 128, available = 8 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xce8c38f0d71ab3d3, size of contents in MSG FIFO before new data: 0
+	APP FIFO last
+	KMAC message done, pending process
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 128, available = 8 pending_process = True, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: ce8c38f0d71ab3d3
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 128, available = 8 pending_process = True, digest_req_ctr = 0
+	Starting round logic
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 98, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 97, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 96, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 95, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 94, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 93, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 92, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 91, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 90, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 89, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 88, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 87, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 86, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 85, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 84, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 83, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 82, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 81, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 80, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 79, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 78, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 77, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 76, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 75, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 74, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 73, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 72, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 71, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 70, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 69, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 68, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 67, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 66, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 65, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 64, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 63, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 62, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 61, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 60, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 59, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 58, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 57, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 56, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 55, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 54, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 53, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 52, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 51, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 50, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 49, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 48, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 47, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 46, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 45, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 44, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 43, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 42, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 41, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 40, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 39, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 38, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 37, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 36, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 35, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 34, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 33, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 32, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 31, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 30, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 29, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 28, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 27, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 26, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 25, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 24, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 23, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 22, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 21, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 20, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 19, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 18, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 17, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 16, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 15, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 14, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 13, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 12, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 11, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 10, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 9, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 8, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 7, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 6, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 5, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 4, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 3, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 2, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 1, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 8, available = 128 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 16, available = 120 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 24, available = 112 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 32, available = 104 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 40, available = 96 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 48, available = 88 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 56, available = 80 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 64, available = 72 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 72, available = 64 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 80, available = 56 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 88, available = 48 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 96, available = 40 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 104, available = 32 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 112, available = 24 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 120, available = 16 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 128, available = 8 pending_process = True, digest_req_ctr = 0
+	Starting round logic
+	Starting processing
+	KMAC START PROCESS
+	Starting round logic
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 99, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 98, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 97, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 96, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 95, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 94, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 93, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 92, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 91, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 90, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 89, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 88, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 87, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 86, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 85, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 84, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 83, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 82, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 81, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 80, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 79, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 78, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 77, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 76, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 75, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 74, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 73, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 72, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 71, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 70, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 69, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 68, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 67, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 66, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 65, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 64, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 63, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 62, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 61, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 60, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 59, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 58, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 57, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 56, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 55, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 54, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 53, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 52, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 51, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 50, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 49, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 48, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 47, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 46, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 45, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 44, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 43, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 42, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 41, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 40, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 39, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 38, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 37, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 36, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 35, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 34, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 33, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 32, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 31, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 30, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 29, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 28, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 27, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 26, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 25, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 24, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 23, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 22, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 21, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 20, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 19, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 18, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 17, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 16, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 15, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 14, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 13, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 12, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 11, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 10, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 9, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 8, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 7, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 6, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 5, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 4, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 3, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 2, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 1, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=True read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: True
+	Read value: 0x5c51025b3ec3330148194c8e22510fbe2afea8da9bfd12bb5d8ce7ee6b3c35eb
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Setting KMAC config: mode = 0, strength = 2, len = 136
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	KMAC App Iface Ready
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0x3334c59476c717b802cedb6c919345bcbaceb75f1f7d6396e425c5d39d34f3a9
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xe425c5d39d34f3a9, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: e425c5d39d34f3a9
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xbaceb75f1f7d6396, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: baceb75f1f7d6396
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x2cedb6c919345bc, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 8, available = 128 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 02cedb6c919345bc
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x3334c59476c717b8, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 16, available = 120 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 3334c59476c717b8
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0xb62477a611d0a7d86b39131461df198238be9bfe4d1f7956e3dd3da28ea139eb
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 24, available = 112 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 32, available = 104 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xe3dd3da28ea139eb, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 32, available = 104 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: e3dd3da28ea139eb
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x38be9bfe4d1f7956, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 32, available = 104 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 38be9bfe4d1f7956
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x6b39131461df1982, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 40, available = 96 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 6b39131461df1982
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xb62477a611d0a7d8, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 48, available = 88 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: b62477a611d0a7d8
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0x810c943f73434af863be43f1def5a57177f6560dd383a4b1441b8568e4433b3a
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 56, available = 80 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 64, available = 72 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x441b8568e4433b3a, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 64, available = 72 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 441b8568e4433b3a
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x77f6560dd383a4b1, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 64, available = 72 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 77f6560dd383a4b1
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x63be43f1def5a571, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 72, available = 64 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 63be43f1def5a571
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0x810c943f73434af8, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 80, available = 56 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: 810c943f73434af8
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0xfce18c4f42e5dba7d7514c876e3a0473a1a56e68ce833a2ada91177ff2db034f
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 88, available = 48 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 96, available = 40 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xda91177ff2db034f, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 96, available = 40 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: da91177ff2db034f
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xa1a56e68ce833a2a, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 96, available = 40 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: a1a56e68ce833a2a
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xd7514c876e3a0473, size of contents in MSG FIFO before new data: 0
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 104, available = 32 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: d7514c876e3a0473
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xfce18c4f42e5dba7, size of contents in MSG FIFO before new data: 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 112, available = 24 pending_process = False, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: fce18c4f42e5dba7
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Run BNWSRW
+	REG -> KMAC_MSG reg: 0x505984e123d5d74137c4342128479e780eec339518917b4ce8c38f0d71ab3d3
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 120, available = 16 pending_process = False, digest_req_ctr = 0
+	APP INTF FIFO EMPTY IN NEXT STEP
+	Pending write to App FIFO
+	Attempting write to App FIFO: ready = True, fifo len = 0
+	KMAC_MSG -> APP FIFO: Writing 32 bytes to App FIFO
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 128, available = 8 pending_process = False, digest_req_ctr = 0
+	APP FIFO -> MSG FIFO: Absorbing 8 bytes: 0xce8c38f0d71ab3d3, size of contents in MSG FIFO before new data: 0
+	APP FIFO last
+	KMAC message done, pending process
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 128, available = 8 pending_process = True, digest_req_ctr = 0
+	MSG FIFO -> STATE: Absorbing 64-bit: ce8c38f0d71ab3d3
+CYCLE - Stepping KMAC, remaining_cycles = None, core_pending_bytes = 128, available = 8 pending_process = True, digest_req_ctr = 0
+	Starting round logic
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 98, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 97, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 96, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 95, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 94, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 93, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 92, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 91, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 90, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 89, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 88, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 87, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 86, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 85, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 84, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 83, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 82, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 81, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 80, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 79, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 78, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 77, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 76, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 75, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 74, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 73, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 72, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 71, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 70, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 69, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 68, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 67, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 66, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 65, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 64, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 63, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 62, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 61, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 60, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 59, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 58, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 57, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 56, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 55, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 54, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 53, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 52, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 51, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 50, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 49, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 48, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 47, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 46, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 45, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 44, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 43, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 42, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 41, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 40, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 39, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 38, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 37, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 36, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 35, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 34, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 33, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 32, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 31, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 30, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 29, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 28, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 27, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 26, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 25, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 24, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 23, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 22, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 21, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 20, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 19, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 18, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 17, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 16, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 15, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 14, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 13, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 12, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 11, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 10, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 9, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 8, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 7, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 6, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 5, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 4, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 3, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 2, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 1, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 8, available = 128 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 16, available = 120 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 24, available = 112 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 32, available = 104 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 40, available = 96 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 48, available = 88 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 56, available = 80 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 64, available = 72 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 72, available = 64 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 80, available = 56 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 88, available = 48 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 96, available = 40 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 104, available = 32 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 112, available = 24 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 120, available = 16 pending_process = True, digest_req_ctr = 0
+	Apply Padding
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 128, available = 8 pending_process = True, digest_req_ctr = 0
+	Starting round logic
+	Starting processing
+	KMAC START PROCESS
+	Starting round logic
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 99, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 98, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 97, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 96, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 95, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 94, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 93, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 92, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 91, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 90, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 89, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 88, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 87, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 86, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 85, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 84, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 83, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 82, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 81, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 80, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 79, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 78, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 77, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 76, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 75, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 74, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 73, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 72, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 71, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 70, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 69, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 68, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 67, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 66, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 65, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 64, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 63, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 62, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 61, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 60, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 59, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 58, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 57, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 56, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 55, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 54, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 53, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 52, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 51, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 50, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 49, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 48, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 47, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 46, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 45, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 44, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 43, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 42, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 41, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 40, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 39, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 38, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 37, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 36, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 35, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 34, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 33, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 32, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 31, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 30, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 29, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 28, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 27, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 26, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 25, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 24, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 23, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 22, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 21, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 20, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 19, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 18, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 17, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 16, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 15, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 14, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 13, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 12, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 11, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 10, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 9, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 8, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 7, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 6, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 5, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 4, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 3, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 2, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 1, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	Processing
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=False read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: False
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+	KMAC Digest Ready Req: autowrite=True shift=False permute=False read=False ready=True read_offset=0 leftover=0
+	KMAC_DIGEST - Request value: True
+	Read value: 0x5c51025b3ec3330148194c8e22510fbe2afea8da9bfd12bb5d8ce7ee6b3c35eb
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
+CYCLE - Stepping KMAC, remaining_cycles = 0, core_pending_bytes = 0, available = 136 pending_process = False, digest_req_ctr = 0
