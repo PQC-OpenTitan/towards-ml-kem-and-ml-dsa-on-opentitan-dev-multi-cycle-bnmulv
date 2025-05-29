@@ -944,6 +944,8 @@ module otbn_alu_bignum
   logic [15:0]       shifter_vec_in_orig [15:0];
   logic [15:0]       shifter_vec_in_reverse [15:0];
   logic [15:0]       shifter_vec_out [15:0];
+  logic [31:0]       shifter_vec_tmp [15:0];
+  logic [31:0]       shifter_vec_tmp_shifted [15:0];
   logic [15:0]       shifter_vec_out_reverse [15:0];
   logic [WLEN-1:0]   shifter_vec_res;
   logic              shifter_selvector_i;
@@ -997,8 +999,10 @@ module otbn_alu_bignum
                                                                                        (i % 2 == 1) ? shifter_vec_in_reverse[i-1] :
                                                                                                       shifter_vec_in_reverse[i+1];
     // Shifter below either shifts as 16 or 32 bit vectors
+    assign shifter_vec_tmp[i] = {shifter_vec_in[i+1], shifter_vec_in[i]};
+    assign shifter_vec_tmp_shifted[i] = shifter_vec_tmp[i] >> alu_predec_bignum_i.shift_amt;
     assign shifter_vec_out[i] = (shifter_selvector_i | (i % 2 == 1)) ? (shifter_vec_in[i] >> alu_predec_bignum_i.shift_amt) :
-                                                                       {{shifter_vec_in[i+1], shifter_vec_in[i]} >> alu_predec_bignum_i.shift_amt}[WLEN/16-1:0];
+                                                                       shifter_vec_tmp_shifted[i][15:0];
 
     for (genvar j=0; j<WLEN/16; ++j) begin : g_shifter_vec_reverse_output
       assign shifter_vec_out_reverse[i][j] = shifter_selvector_i ? shifter_vec_out[i][WLEN/16-j-1] :
