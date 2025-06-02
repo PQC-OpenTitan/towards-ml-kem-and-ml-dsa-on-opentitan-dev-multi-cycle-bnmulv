@@ -1239,7 +1239,6 @@ module otbn_alu_bignum
                                                     ((i==0) ? adder_y_carry_in : 
                                                               adder_y_carry_out[i-1]);
 
-    assign adder_x_op_a[i] = operation_i.operand_a[i*16+:16];
 
   // SEC_CM: DATA_REG_SW.SCA
   prim_blanker #(.Width(16)) u_adder_y_op_a_blanked (
